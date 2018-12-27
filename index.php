@@ -439,14 +439,14 @@ window.onclick = function(event) {
 										
 										
 									</select>
-								<input type="text" id="datepicker"  class="intro_input datepicker" placeholder="Tanggal Appointment" name="tgl" required="required">
+								<input type="text"   class="intro_input datepicker" placeholder="Tanggal Appointment" name="tgl" required="required">
 
     <input size="16" type="text" value="" readonly>
     <span class="add-on"><i class="icon-th"></i></span>
 						</div>
 						 <button class="btn btn-primary" name="save" >Make an Appointment</button>
 						  <hr>
-						 <p readonly="" style="background-color: #5F9EA0	; color: white; border-radius: 10px;">" Sebelum melakukan appointment silahkan cek jadwal dokter yang tertera dengan teliti "</p>
+						 <p readonly="" style="background-color: #5F9EA0	; color: white; border-radius: 10px; font-size: 12px; text-align: center;">" Sebelum melakukan appointment silahkan cek jadwal dokter yang tertera dengan teliti "</p>
 						</form>
 
  

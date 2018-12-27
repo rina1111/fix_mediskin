@@ -71,101 +71,12 @@ session_start();
 						<li ><a href="index.php">Home</a></li>
 						
 						<li class="active"><a href="registrasi_clinic.php">Register for Clinic</a></li>
-							<li ><div class="Login">
-							<button onclick="myFunction2()" class="dropbtn" style="font-size: 15px;
-							font-weight: 600;
-							">Login</button>
-							<div id="Dropdown" class="dropdown-content2" style="color: #57ccc3">
-								<a href="login.php">Login as doctor</a>
-								<a href="login_klinik.php">Login as clinic</a>
-							</div>
-						</div></li>
-
-
-						<style>
-						.dropbtn {
-							background-color: white;
-							color:  black;
-
-							font-size: 15px;
-							border: none;
-							cursor: pointer;
-						}
-
-						.dropbtn:hover, .dropbtn:focus {
-							background-color: white;
-							color:  #57ccc3;
-						}
-
-
-						.dropdown {
-							position: relative;
-							display: inline-block;
-						}
-
-						.dropdown-content {
-							display: none;
-							position: absolute;
-							background-color: white;
-							min-width: 160px;
-							overflow: auto;
+						<li class=""><a href="registrasi_clinic.php">Login as Clinic</a></li>
 							
-						}
-
-						.dropdown-content a {
-							color: black;
-							padding: 12px 16px;
-							text-decoration: none;
-							display: block;
-						}
-							.dropdown-content2 {
-							display: none;
-							position: absolute;
-							background-color: white;
-							min-width: 160px;
-							overflow: auto;
-							
-						}
-
-						.dropdown-content2 a {
-							color: black;
-							padding: 12px 16px;
-							text-decoration: none;
-							display: block;
-						}
-
-						.dropdown a:hover {background-color:  white;}
-
-						.show {display: block;}
-					</style>
-					
-
-	<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction2() {
-	document.getElementById("Dropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
-
-		var dropdowns = document.getElementsByClassName("dropdown-content");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-			var openDropdown = dropdowns[i];
-			if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-			}
-		}
-	}
-}
-</script>
 
 <li><a href="about.php">About Us</a></li>
 <li><a href="datadokter.php">Doctors</a></li>
-<li><a href="Clinic.html">Clinic</a></li>
+<li><a href="klinik.php">Clinic</a></li>
 
 </ul>
 </nav>

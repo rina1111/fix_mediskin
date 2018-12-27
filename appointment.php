@@ -95,6 +95,11 @@
 
 
 						<style>
+						@media print{
+							.header, .topnav, .footer{
+								display:none;
+							}
+						}
 						.dropbtn {
 							background-color: white;
 							color:  black;
@@ -239,7 +244,7 @@ window.onclick = function(event) {
 
  <p class="title"style=" font-size: 14px;font-family: times rowman;"> Telepon:<a href=""style=" font-size: 14px;font-family: times rowman;"> <?php echo ($pecah['telepon']);?></a></p>
   
- <p><button>Cetak <i class="fas fa-print"></i></button></p>
+ <p><button onclick="myFunction()">Cetak</a> <i class="fas fa-print"></i></button></p>
 </div>
 	</div>
 						</div>
@@ -253,7 +258,7 @@ window.onclick = function(event) {
 <!---------------------------->
 <!-- Footer -->
 
-<footer style="background-color:black ;">
+<footer class="footer" style="background-color:black ;">
  <div class="container">
    <div class="row">
    
@@ -300,7 +305,11 @@ window.onclick = function(event) {
   </div>
 </div>
 </footer>
-
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
 
 </body>
 </html>
